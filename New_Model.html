@@ -1671,7 +1671,7 @@ packages &lt;- c(&quot;ggplot2&quot;, &quot;ggthemes&quot;, &quot;scales&quot;)
 lapply(packages, library, character.only = TRUE)
 set.seed(35)</code></pre>
 <p><br></p>
-<p>Set initial carbon pool sizes and create daily temperature and moisture data to run the model</p>
+<p>Set initial carbon pool sizes and create daily temperature and moisture data to run the model. The model currently tracks size pools - POM, MAOM, microbial necromass, ECM fungi biomass C, SAP fungi biomass C, and cumulative CO<sub>2</sub> flux.</p>
 <pre class="r"><code># initial C pool sizes - p = pom, m = maom, n = necromass
 cpools &lt;- data.frame(
                     &quot;bulkpc&quot; = 3,        # bulk C pool size
