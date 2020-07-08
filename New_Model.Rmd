@@ -4,8 +4,6 @@ author:
 - <br>
 - Chris Walter - *West Virginia University*<br><br>
 output:
-  pdf_document:
-    toc: yes
   html_document:
     code_folding: hide
     fig_caption: yes
@@ -15,6 +13,8 @@ output:
     toc-title: Contents
     toc_float:
       toc_collapsed: yes
+  pdf_document:
+    toc: yes
 ---
 <style type="text/css">
 h1 { /* Header 1 */
@@ -89,7 +89,7 @@ set.seed(35)
 
 <br>
 
-Set initial carbon pool sizes and create daily temperature and moisture data to run the model
+Set initial carbon pool sizes and create daily temperature and moisture data to run the model. The model currently tracks six pools - POM, MAOM, microbial necromass, ECM fungi biomass C, SAP fungi biomass C, and cumulative CO~2~ flux.
 
 ```{r echo = TRUE, message = FALSE, fig.show = 'hide', warning = FALSE}
 
