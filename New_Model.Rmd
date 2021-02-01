@@ -117,7 +117,6 @@ head(dat)
 Set parameters
 
 ```{r echo = TRUE, message = FALSE, fig.show = 'hide', warning = FALSE}
-
 # set parameters
 theta <- 0.32                          # volumetric water content (vwc)
 thetasat <- 0.45                       # vwc at field capacity
@@ -131,7 +130,7 @@ params <- data.frame(
                     "Vmaxref_Pom" = 9.0,              # relative max decomp rate
                     "Vmaxref_Maom" = 0.25,            # ''
                     "Vmaxref_Necro"= 4.5,             # ''
-                    "Ea_Pom" = 5e3,                   # enzyme affinity
+                    "Ea_Pom" = 5e3,                   # activation energy
                     "Ea_Maom" = 30e3,                 # ''
                     "Ea_Necro"= 3e3,                  # ''
                     "kC_Pom" = 0.01,                  # Michaelis constant
